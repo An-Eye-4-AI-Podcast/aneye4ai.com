@@ -11,15 +11,15 @@
 # (Using that method instead of site.owner, in case your posts get cloned with your repo.)
 
 # Site settings
-title: _site name_
-description: _description_
+title: _South CSU Reusable IP Assets_
+description: _Born out of the South CSU, these reusable IP assets are geared for all architects across all CSU areas_
 owner:
-  name: _your name_ # or company name
-  url: "http://example.com" # your URL
-first_published: 2010 # if migrating another site, the year of your first publish
+  name: _annielytix (Laura Edell)_ # or company name
+  url: "https://msusazureaccelerators.github.io/SouthReusableAssets" # your URL
+first_published: 2024 # if migrating another site, the year of your first publish
                       # Must be a 4-digit integer year (math is used on it)
-url: "http://example.com" # the base hostname & protocol for this site
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://msusazureaccelerators.github.io" # the base hostname & protocol for this site
+baseurl: "/SouthReusableAssets" # the subpath of your site, e.g. /blog
             # Note you'll have to move your robots.txt to the root if you want it used.
             # And list multiple sitemaps if there are other subdirectories you want indexed
             # besides this blog.
@@ -28,18 +28,18 @@ lang: en-us # used in HTML lang attributes
 # on landing page
 # - set the greeting only if you want to display the first green section
 greeting:
-  title: _Your greeting_  
-  text: _Your detailed greeting text_
+  title: _Welcome_
+  text: _Your Usable IP Assets_
 # - displayed at the bottom
-closing-head: _Your closing_
-closing-para: _Your detailed closing_
+closing-head: _Have an idea_
+closing-para: _Upload your reusable IP assets today_
 
 # on all pages (and the first three you list display with greeting, if included)
 social:
-  twitter: https://twitter.com/_username_
-  github: https://github.com/_username_
-  linkedin-square: https://linkedin.com/in/_username_
-  facebook-official: https://facebook.com/_username_
+  #twitter: https://twitter.com/_username_
+  github: https://github.com/annielytix
+  linkedin-square: https://linkedin.com/in/lauraerinedell
+  #facebook-official: https://facebook.com/_username_
   #google-plus-square: https://plus.google.com/u/0/+_username_
   email: /contact/ # you can configure and use this contact page or use your email addy
   #flickr:
@@ -109,7 +109,7 @@ markdown: kramdown
 #sass:
 #  style: compressed
 exclude: ['site.bat','compose.rb','README.md']
-include: ['_pages','.htaccess']
+include: ['_pages','_categories','.htaccess']
 defaults:
   - scope:
       path: _pages
@@ -124,6 +124,10 @@ defaults:
       path: _drafts
     values:
       layout: post
+  - scope:
+      path: _categories
+    values:
+      layout: category
 
 # to initialize arrays in assignments (assign myarr = site.empty_array)
 # (easier to grok than assign myarr = '' | split',')
